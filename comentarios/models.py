@@ -8,6 +8,5 @@ class Comentarios(models.Model):
     resumen=models.CharField(max_length=23,default='Exquisito')
     gradoSatisfaccion=models.TextField(default="Bien")
     fecha = models.DateTimeField(default=timezone.now)
-"""     calificacion=models.CharField(max_length=90,default="Sin calificar",blank=True) """
 def __str__(self):
     return self.resumen    
